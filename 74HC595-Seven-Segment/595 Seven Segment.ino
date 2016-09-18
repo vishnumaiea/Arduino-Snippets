@@ -6,7 +6,8 @@
 //  Notes   : Code for using a 74HC595 Shift Register           //
 //            to dispaly all possible characters on a           //
 //            seven segment display (coommon cathode)           //
-//****************************************************************
+//            More at https://goo.gl/u2Zj4H                     //
+//**************************************************************//
 
 int latchPin = 8; //Pin connected to ST_CP of 74HC595
 int clockPin = 12; //Pin connected to SH_CP of 74HC595
