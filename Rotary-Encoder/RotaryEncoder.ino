@@ -30,9 +30,9 @@ int Pin_A = 2; //interrupt pin (digital) for A (change your pins here)
 int Pin_B = 3; //interrupt pin (digital) for B
 
 
-void setup(){
+void setup()
+{
   SIG_B = digitalRead(Pin_B); //current state of B
-  
   SIG_A = SIG_B > 0 ? 0 : 1; //let them be different
 
   //attach iterrupt for state change, not rising or falling edges
@@ -41,28 +41,32 @@ void setup(){
 }
 
 
-void loop(){ //does nothing here. Add your code here
+void loop() //does nothing here. Add your code here
+{
   
 }
 
 
-void A_CHANGE(){  //Interrupt Service Routine (ISR)
+void A_CHANGE() //Interrupt Service Routine (ISR)
+{
   detachInterrupt(0); //important
   SIG_A = digitalRead(Pin_A); //read state of A
   SIG_B = digitalRead(Pin_B); //read state of B
  
-  if((SIG_B == SIG_A) && (lastSIG_B != SIG_B)){
-   pulseCount--; //anti-clockwise rotation
-   lastSIG_B = SIG_B;
-   Serial.print(pulseCount);
-   Serial.println(" - Fall"); //SIG_A falling
+  if((SIG_B == SIG_A) && (lastSIG_B != SIG_B))
+  {
+    pulseCount--; //anti-clockwise rotation
+    lastSIG_B = SIG_B;
+    Serial.print(pulseCount);
+    Serial.println(" - Fall"); //SIG_A falling
   }
  
-  else if((SIG_B != SIG_A) && (lastSIG_B == SIG_B)){
-   pulseCount++; //clockwise rotation
-   lastSIG_B = SIG_B > 0 ? 0 : 1; //save last state of B
-   Serial.print(pulseCount);
-   Serial.println(" - Rise"); //SIG_A rising
+  else if((SIG_B != SIG_A) && (lastSIG_B == SIG_B))
+  {
+    pulseCount++; //clockwise rotation
+    lastSIG_B = SIG_B > 0 ? 0 : 1; //save last state of B
+    Serial.print(pulseCount);
+    Serial.println(" - Rise"); //SIG_A rising
   }
   attachInterrupt(digitalPinToInterrupt(Pin_A), A_CHANGE, CHANGE);
 }
