@@ -57,7 +57,7 @@ void A_CHANGE() //Interrupt Service Routine (ISR)
     pulseCount--; //anti-clockwise rotation
     lastSIG_B = SIG_B;
     Serial.print(pulseCount);
-    Serial.println(" - Fall"); //SIG_A falling
+    Serial.println(" - Forward");
   }
  
   else if((SIG_B != SIG_A) && (lastSIG_B == SIG_B))
@@ -65,7 +65,7 @@ void A_CHANGE() //Interrupt Service Routine (ISR)
     pulseCount++; //clockwise rotation
     lastSIG_B = SIG_B > 0 ? 0 : 1; //save last state of B
     Serial.print(pulseCount);
-    Serial.println(" - Rise"); //SIG_A rising
+    Serial.println(" - Reverse");
   }
   attachInterrupt(digitalPinToInterrupt(Pin_A), A_CHANGE, CHANGE);
 }
