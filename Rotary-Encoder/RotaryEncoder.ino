@@ -17,7 +17,7 @@
 //          digital pins 2 and 3 of your Uno or any other     //
 //          board accordingly. Also add RC filters to the     //
 //          pins.                                             //
-
+//------------------------------------------------------------//
 
 int pulseCount; //rotation step count
 int SIG_A = 0; //pin A output
