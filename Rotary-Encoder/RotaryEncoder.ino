@@ -1,5 +1,5 @@
 //------------------------------------------------------------//
-//  Incremental Rotary Encoder Interfacing using Interrupts   //
+//  Interfacing Incremental Rotary Encoder using Interrupts   //
 //                                                            //
 //  Author : Vishnu M Aiea                                    //
 //  E-Mail : vishnumaiea@gmail.com                            //
