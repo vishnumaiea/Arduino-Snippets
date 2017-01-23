@@ -1,5 +1,4 @@
 //------------------------------------------------------------//
-
 //  Incremental Rotary Encoder Interfacing using Interrupts   //
 //                                                            //
 //  Author : Vishnu M Aiea                                    //
@@ -8,9 +7,9 @@
 //  Web : https://goo.gl/xf8Ntc                               //
 //  Github : https://github.com/vishnumaiea/Arduino-Snippets  //
 //  See my project website on www.vishnumaiea.in              //
-
+//                                                            //
 //------------------------------------------------------------//
-
+//                                                            //
 //  Notes : The pins are configured for working with Arduino  //
 //          Uno. Digital pin 2 and 3 are interrupt capable    //
 //          pins in Uno. So connect your encoder outputs to   //
