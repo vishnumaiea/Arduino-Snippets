@@ -1,6 +1,6 @@
 //-----------------------------------------------//
 
-//  Writing to reading from a micro SD card.
+//  Writing to and reading from a micro SD card.
 //
 //  Type "i" or "I" in the serial terminal to
 //  initialize the card.
