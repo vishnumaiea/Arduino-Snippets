@@ -5,7 +5,7 @@
 //  Type "i" or "I" in the serial terminal to
 //  initialize the card.
 //
-//  Type "r" to open and write to a file.
+//  Type "n" or "N" to open and write to a file.
 //
 //  Author : Vishnu M Aiea
 //  Web : www.vishnumaiea.in
