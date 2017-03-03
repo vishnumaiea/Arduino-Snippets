@@ -1,2 +1,2 @@
 # Arduino-Snippets
-Arduino code snippets.
+Arduino code snippets for interfacing shields, modules and other devices.
