@@ -1,0 +1,1 @@
+Codes for interfacing Catalex Micro SD Card Adapter with Arduino using the SdFat library. Wiring and detailed code explanation can be found here : http://www.vishnumaiea.in/projects/hardware/interfacing-catalex-micro-sd-card-module
