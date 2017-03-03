@@ -1,1 +1,1 @@
-Code for interfacing rotary encoders with Arduino using interrupts. Wiring and detailed code explanation can be foudn here : http://www.vishnumaiea.in/projects/hardware/interfacing-incremental-rotary-encoder
+Code for interfacing rotary encoders with Arduino using interrupts. Wiring and detailed code explanation can be found here : http://www.vishnumaiea.in/projects/hardware/interfacing-incremental-rotary-encoder
